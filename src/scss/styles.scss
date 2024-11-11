@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+// If you want to override variables do it here
+@import '../assets/css/fontawesome.css';
+@import '../assets/css/fontawesome-all.css';
+@import '../assets/css/fontawesome-brands.css';
+@import '../assets/css/fontawesome-solid.css';
+//
+@import "variables";
+
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import styles with default layout.
+@import "@coreui/coreui/scss/coreui";
+ 
+// Import Chart.js custom tooltips styles
+@import "@coreui/chartjs/scss/coreui-chartjs";
+
+// perfect scrollbar theming for use with [perfectScrollbar] directive
+//@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+
+@import "layout";
+
+// Some temp fixes
+@import "fixes";
+
+// Prism.js
+@import "examples";
+
+// If you want to add something do it here
+@import "custom";
+.smallcircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    border: 1px solid #e6e6e6;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 2%;
+  }
+.redbackground{
+    background-color: red;
+    border: 1px solid red;
+    color:white;
+}
+.redbackground:hover{
+    background-color: rgb(247, 44, 44);
+    border: 1px solid red;
+    color:white;
+}
+.greenbackground{
+    background-color: green;
+    border: 1px solid green;
+    color:white;
+}
+.greenbackground:hover{
+    background-color: rgb(0, 155, 0);
+    border: 1px solid green;
+    color:white;
+}
+.bluebackground:hover{
+    background-color: rgb(0, 0, 255);
+    border: 1px solid #3399ff;
+    color:white;
+}
+.bluebackground{
+    background-color: #3399ff;
+    border: 1px solid #3399ff;
+    color:white;
+}
